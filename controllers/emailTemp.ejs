@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyPortfolio</title>
+
+    <style>
+        body {
+            margin: 30px;
+            font-family: serif;
+
+        }
+
+        a {
+            color: #fa0355;
+            text-decoration: none;
+        }
+
+        span {
+            color: #fa0355;
+        }
+
+        img {
+            width: 150px;
+            height: 200px;
+            border: #000033 solid 2px;
+            border-radius: 15px;
+            text-align: start
+        }
+
+        .flex-container {
+            display: flex;
+            padding: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+        }
+
+        .flex-container div {
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .container-1 {
+            color: #000033;
+            text-align: left
+        }
+
+        .containerCenter {
+            color: #000033;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="containerCenter">
+            <h2>Hello, This is</h2>
+            <h2>Md Abdullah Baig</h2>
+            <img className="img-responsive"
+                src="https://res.cloudinary.com/diirdewi4/image/upload/c_fit,h_500,w_500/v1565131782/mypic.jpg"
+                alt="" />
+
+        </div>
+        <div class="container-1">
+            <h3>Dear, <%= clientName %></h3>
+            <p><b>Thanks for contacting me. </b></p>
+            <a href="https://mdabdullahbaig.github.io/" target="_blank" rel="noopener noreferrer">
+                <b>My Portfolio</b> 
+            </a>
+            <h4><b>Your Message: </b><%= clientMessage %></h4>
+            <h5><b>Your Email: </b><a href="mailto:<%= clientEmail %>"><%= clientEmail %></a></h5>
+
+        </div>
+    </div>
+</body>
+
+</html>
